@@ -1,0 +1,60 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+input[type="file"],
+input[name="question"] {
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:focus,
+input[name="question"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.4);
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.answer-box {
+  background: rgba(75, 85, 99, 0.3); /* slightly transparent dark bg */
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 182, 193, 0.5); /* rose-ish border */
+  word-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(75, 85, 99, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.5); /* amber color */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.8);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -1,0 +1,5 @@
+cleberity_detection_and_qa_system.egg-info
+venv
+app/__pycache__
+app/utils/__pycache__
+.env
